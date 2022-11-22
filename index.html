@@ -1,81 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>CV - Awittia</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d55cb5d036.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="container">
-		<!-- Judul Halaman -->
-		<h1>Curriculum Vitae</h1>
-		<!-- Navbar -->
-		<div class="navbar">
-	    	<ul type="square" class="list-nav">
-	        	<li><a href="#" class="active">About</a></li>
-	        	<li><a href="portofolio.html">Portofolio</a></li>
-	        	<li><a href="contact.html">Contact</a></li>
-	      	</ul>
-	    </div>
-	    <!-- Konten -->
-	    <div class="content">
-	    	<!-- Profil -->
-      		<div id="content-img">
-        		<div class="content1">
-        		  <img src="img/profile2.jpg">
-          		  <h2 class="content-header">Awittia Ananda Oktaviani</h2>
-         		  <p class="content-text">
-            		<b>PPLG X-1</b>
-          		  </p>
-       			</div>
-     		</div>
-     		<!-- Deskripsi Singkat -->
-      		<section class="section section-small">
-       			<h2 class="section-header">About</h2>
-        		<p> My name is Awittia, you can call me Awit. I am in class X by taking PPLG my interest major.</p>
-      		</section>
-      		<hr>
-      		<!-- Table -->
-		    <section class="section">
-		        <h2 class="section-header">Skill</h2>
-		        <div class="responsive-table">
-		            <table>
-		             	<tr class="tr-header">
-		                	<th>&nbsp;</th>
-		                	<th>Percent</th>
-		             	</tr>
-		              	<tr>
-		                	<td class="text-left">English</td>
-		                	<td>80%</td>
-		              	</tr>
-		              	<tr>
-		                	<td class="text-left">Indonesian</td>
-		                	<td>90%</td>
-		              	</tr>
-		              	<tr>
-		                	<td class="text-left">productive</td>
-		                	<td>80%</td>
-		              	</tr>
-		              	<tr>
-		                	<td class="text-left">drawing and coloring</td>
-		                	<td>85%</td>
-		              	</tr>
-		            </table>
-		          </div>
-		    </section>
-		    <hr>
-		    <!-- List Pendidikan -->
-		    <section class="section section-small">
-		    	<h2 class="section-header">Education</h2>
-                <h5>SDN HARJASARI 01</h5>
-		        <p>2013 - 2019</p>
-		        <h5>SMP NEGRI 1 CIAWI</h5>
-		        <p>2019 - 2022</p>
-		    </section>
-		</div>
-		<footer>
-     		<p class="footer-text">Copyright &copy; 2021</p>
-    	</footer>
-	</div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Hobby</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Student Of Wikrama Bogor</p>
+                <h1>Hi, I'm <span>Awittia</span><br>Ananda Oktaviani</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/profile3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! my name is Awittia Ananda Oktaviani, you can call me Awit or whatever you like, as comfortable as you like.
+                        Oh yeah, I majored in PPLG, btw, if you read my full name, you'll immediately see that I was born in October, and that's true. 
+                        And my zodiac is libra, nice to meet you.</p>
+
+                        <div class="tab-tittles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('hobbys')">Hobbys</p>
+                            <p class="tab-links"onclick="opentab('educations')">Educations</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br>HyperText Markup Language</li>
+                                <li><span>CSS</span><br>Cascading Style Sheet</li>
+                                <li><span>FIGMA</span><br>design tool in the form of a website that
+                                    connected to the cloud so you can
+                                    used anytime and anywhere via
+                                    Internet</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hobbys">
+                            <ul>
+                                <li><span>Singing</span><br>I really like singing, when I have free time, I sometimes record my voice hehe</li>
+                                <li><span>Drawing</span><br>Since childhood I love to draw and color, I also often get an award.</li>
+                                <li><span>Make a story</span><br>since 2019, my hobby has increased, namely making storylines, which I have uploaded on the wattpad platform until now to twitter</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span>TK LATANSA</span><br>2011-2012</li>
+                                <li><span>SDN HARJASARI 01</span><br>2013-2019</li>
+                                <li><span>SMPN 01 CIAWI</span><br>2019-2022</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>HTML stands for Hypertext Markup Language, which is the
+                    standard markup language
+                    for creating and compiling web pages and applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>CSS stands for cascading style sheets. According to Techterms, CSS can be defined as
+                    a tiered sheet for web page layout formatting.
+                   CSS is an invention to help web developers who previously only depended
+                   on HTML as a markup language.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>JAVA SCRIPT</h2>
+                <p>Javascript is a programming language that is lightweight,
+                    dynamic, and can be directed
+                    to both oriented programming and functional programming.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio---------- -->
+<div id="portfolio">
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My activity</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/activity1.jpg.jpeg">
+                <div class="layer">
+                    <h3>Spotify</h3>
+                    <p>Spotify is a digital music, podcast, and video service that gives you access to
+                        millions of songs and other content from creators around the world.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/activity2.jpg.jpeg"><div class="layer">
+                    <h3>Novel</h3>
+                    <p>Novel is a literary work in the form of prose which has intrinsic elements.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/activity3.jpg.jpeg"><div class="layer">
+                    <h3>Ngoding</h3>
+                    <p>Coding itself is an activity where the programmer tells the computer what
+                        he should do through a code in the script.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>awittiaananda@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>089638176276</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+     var tablinks = document.getElementsByClassName("tab-links")
+     var tabcontents = document.getElementsByClassName("tab-contents")
+
+     function opentab(tabname){
+        for (tablink of tablinks){
+             tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+
 </body>
 </html>
